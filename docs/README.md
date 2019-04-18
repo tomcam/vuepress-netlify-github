@@ -2,7 +2,8 @@
 # Configuring VuePress to work with Netlify and GitHub
 
 By Tom Campbell, creator of [VuePress Book](http://vuepressbook.com).
-Find this code on [GitHub](http://github.com/tomcam/vuepress-netlify-github).
+Find this code on [GitHub](http://github.com/tomcam/vuepress-netlify-github),
+or live on [Netlify](https://vuepress-netlify-github.netlify.com/).
 
 ## An Embarrassment of riches
 
@@ -63,8 +64,12 @@ VuePress requires a fairly deep directory structure.
 
 * Create a directory
 ```sh
-mkdir -p ~/Dropbox/work/presshosting/docs/.vuepress
+mkdir -p ~/Dropbox/work/presshosting/docs/.vuepress/public
 ```
+The new "root" directory will of course be `/docs/`. As you probably
+know the hidden `/.vuepress` directory houses not only
+`config.js` but also a `public` directory for static
+assets. It is treated as root in URLs.
 
 ## Creating your root README.md file
 
