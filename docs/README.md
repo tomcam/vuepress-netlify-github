@@ -23,11 +23,11 @@ a powerful side effect: it forces you to concentrate on writing
 and the structure of your articles instead of constantly reworking
 site parameters or format options.
 
-## VuePress prefers a /doc directory
+## VuePress prefers a /docs directory
 
 [VuePress](https://v1.vuepress.vuejs.org/) likes its
-text to be in a `/doc/` directory off root. If you 
-play your cards right it will rewrite the `/doc/` part
+text to be in a `/docs/` directory off root. If you 
+play your cards right it will rewrite the `/docs/` part
 out of URL. This article shows you how to set up
 your workflow so VuePress, Netlify, and local preview all
 know what to do in terms of transforming your 
