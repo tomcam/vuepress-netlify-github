@@ -49,7 +49,7 @@ example, resist the temptation.
 located at `~/Dropbox/work`, but obviously 
 it could be anywhere.
 
-* In this example the repo name is `vuepress-netlify-github`.
+* In this example the GitHub repo name is `vuepress-netlify-github`.
 You would replace this with your own repo name.
 
 * In this example the username is mine (`tomcam`). You would
