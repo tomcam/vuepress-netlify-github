@@ -7,7 +7,8 @@ or live on [Netlify](https://vuepress-netlify-github.netlify.com/).
 
 ## An Embarrassment of riches
 
-The modern web dev world is amazing. VuePress lets you create
+The modern web dev world is amazing. 
+[VuePress](http://vuepress.vuejs.org/) lets you create
 beautiful, high-performance static sites with ease. It integrates
 modern tools like yarn into its workflow, which means that
 you can use those same tools at Netlify to generate your
