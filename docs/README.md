@@ -4,27 +4,48 @@
 By Tom Campbell, creator of [VuePress Book](http://vuepressbook.com).
 Find this code on [GitHub](http://github.com/tomcam/vuepress-netlify-github).
 
+## An Embarrassment of riches
+
+The modern web dev world is amazing. VuePress lets you create
+beautiful, high-performance static sites with ease. It integrates
+modern tools like yarn into its workflow, which means that
+you can use those same tools at Netlify to generate your
+VuePress site and publish it for free!
+
+VuePress converts Markdown files into HTML pages with free
+built-in search (of headings levels 1-3), which means that
+in case you don't like VuePress you can use your same
+markdown articles in any other CMS that supports Mardkdown,
+from Ghost to Jekyll to Hugo to WordPress. Restricting
+the input to text that conforms to Markdown standards has
+a powerful side effect: it forces you to concentrate on writing
+and the structure of your articles instead of constantly reworking
+site parameters or format options.
+
+## VuePress prefers a /doc directory
+
 [VuePress](https://v1.vuepress.vuejs.org/) likes its
 text to be in a `/doc/` directory off root. If you 
 play your cards right it will rewrite the `/doc/` part
 out of URL. This article shows you how to set up
-your workflow so VuePress, Netlify, and GitHub all
+your workflow so VuePress, Netlify, and local preview all
 know what to do in terms of transforming your 
 [Markdown](https://github.github.com/gfm/)
-files into a cohesive website that previews will on your
-machine and upon deployment to the real world by Netlify.
+files into a cohesive website that renders accurately
+on your local machine and upon deployment to the real world by Netlify.
 
 ## Creating a GitHub repo: WATCH CAREFULLY!
 
 Now do exactly as I say here unless you're a 
-Git expert.
+Git expert. If you're used to adding a README.md
+right away when you create your repo at GitHub, for
+example, resist the temptation.
 
 ### Assumptions
 
-* I'm assuming your code will live in a directory 
+* This sample code lives in a directory 
 located at `~/Dropbox/work`, but obviously 
 it could be anywhere.
-
 
 * In this example the repo name is `vuepress-netlify-github`.
 You would replace this with your own repo name.
