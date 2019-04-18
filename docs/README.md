@@ -180,6 +180,33 @@ Note that `/docs/` does not appear anywhere. VuePress rewrites
 the URLs so that `/docs/.vuepress/public` looks like it's
 in root.
 
+## Adding your repo to Netlify
+
+Netlify hosts static sites for free, and it has full support
+for VuePress! Here's how to get your site out to the
+world for the low low price of absolutely nothing.
+
+I'm assuming here you've [signed up for Netlify](https://app.netlify.com/signup),
+which simply requires your GitHub account. Slick.
+
+* Go to [Netlify](https://netlify.com) and choose
+[New site from Git](https://app.netlify.com/start)
+
+* Under **Continuous Deployment** choose GitHub.
+
+Depending on how you've configured Netlify you're given a list
+of all your repos, or you'll have to type in the appropriate one.
+Select it however you need, 
+
+The provided deploy settings work just fine:
+
+**Build command** `vuepress build docs`
+
+**Publish directory** `docs/.vuepress/dist`
+
+* Choose **Deploy site** and watch the magic happen!
+
+
 ## Credits
 
 Image by [kreatikar](https://pixabay.com/users/kreatikar-8562930/) from [Pixabay](https://pixabay.com/illustrations/website-responsive-creative-design-3374825/)
