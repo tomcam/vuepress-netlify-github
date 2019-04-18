@@ -198,12 +198,6 @@ The whole point to this configuration is to store everything
 in `/docs/` instead of the root directory. Let's see how this 
 works in a concrete way.
 
-* Create a new directory called `public` in the `.vuepress` directory:
-
-```sh
-mkdir -p ~/Dropbox/work/vuepress-netlify-github/docs/.vuepress/public
-```
-
 * Add an image file to the `.vuepress/public` directory
 you just created. You can use this example, which is from
 [Pixabay](https://pixabay.com/illustrations/website-responsive-creative-design-3374825/) and is freely usable.
