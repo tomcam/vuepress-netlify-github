@@ -1,4 +1,8 @@
+![Generic biz pic](/wordpress-site-1280.jpg)
 # Configuring VuePress to work with Netlify and GitHub
+
+By Tom Campbell, creator of [VuePress Book](http://vuepressbook.com).
+Find this code on [GitHub](http://github.com/tomcam/vuepress-netlify-github).
 
 [VuePress](https://v1.vuepress.vuejs.org/) likes its
 text to be in a `/doc/` directory off root. If you 
@@ -57,7 +61,7 @@ nvim ~/Dropbox/work/presshosting/docs/README.md
 
 * Give it some contents and save it:
 
-```
+```md
 # Welcome
 
 Thank you for visiting.
@@ -83,7 +87,6 @@ Again:
 
 ```sh
 git remote add origin https://github.com/tomcam/vuepress-netlify-github.git
-
 ```
 
 You won't have to repeat the previous step.
@@ -149,13 +152,34 @@ Time to run VuePress:
 yarn docs:dev
 ```
 
-And visit http://localhost:8080.
+Browse to `http://localhost:8080` and take a look at your masterpiece.
 
+## Directory paths work as expected
 
-Take a look at your masterpiece.
+The whole point to this configuration is to store everything
+in `/docs/` instead of the root directory. Let's see how this 
+works in a concrete way.
 
+* Create a new directory called `public` in the `.vuepress` directory:
 
-git add docs/.vuepress/
+```sh
+mkdir -p ~/Dropbox/work/presshosting/docs/.vuepress/public
+```
 
+* Add an image file to the `.vuepress/public` directory
+you just created. You can use this example, which is from
+[Pixabay](https://pixabay.com/illustrations/website-responsive-creative-design-3374825/) and is freely usable.
 
+* Insert the following code at the top of README.md:
 
+```md
+![Generic biz pic](/wordpress-site-1280.jpg)
+```
+
+Note that `/docs/` does not appear anywhere. VuePress rewrites
+the URLs so that `/docs/.vuepress/public` looks like it's
+in root.
+
+## Credits
+
+Image by [kreatikar](https://pixabay.com/users/kreatikar-8562930/) from [Pixabay](https://pixabay.com/illustrations/website-responsive-creative-design-3374825/)
