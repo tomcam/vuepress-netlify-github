@@ -128,8 +128,8 @@ git remote add origin https://github.com/tomcam/vuepress-netlify-github.git
 ```
 
 You won't have to repeat the previous step.
-It only needed to be done once. Now send this code
-to GitHub.
+It only needed to be done once. Now bring the
+repository up to date and send your code to GitHub.
 
 ```sh
 git push -u origin master
