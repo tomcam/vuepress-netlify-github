@@ -100,7 +100,18 @@ Now it's time to put README.md under source code
 control and push it up to GitHub, where Netlify
 can find it.
 
+The first thing to do is to turn this directory into a git repo.
+
 ```sh
+git init
+```
+
+That only needs to be done once. You'll repeat this next 
+sequence frequently as you update the document.
+
+```sh
+# Each time you update a document
+# you'll perform these steps.
 git add docs/README.md
 git commit -m "Create home page"
 ```
