@@ -15,7 +15,7 @@ VuePress site and publish it for free!
 VuePress converts Markdown files into HTML pages with free
 built-in search (of headings levels 1-3), which means that
 in case you don't like VuePress you can use your same
-markdown articles in any other CMS that supports Mardkdown,
+markdown articles in any other CMS that supports Markdown,
 from Ghost to Jekyll to Hugo to WordPress. Restricting
 the input to text that conforms to Markdown standards has
 a powerful side effect: it forces you to concentrate on writing
