@@ -34,14 +34,10 @@ know what to do in terms of transforming your
 files into a cohesive website that renders accurately
 on your local machine and upon deployment to the real world by Netlify.
 
-## Creating a GitHub repo: WATCH CAREFULLY!
+## Create a repository on GitHub: FOLLOW CAREFULLY!
 
 Now do exactly as I say here unless you're a 
-Git expert. If you're used to adding a README.md
-right away when you create your repo at GitHub, for
-example, resist the temptation.
-
-## Create a repository on GitHub
+Git expert.
 
 * Create a [New repository](https://github.com/new) on 
 GitHub and **do not** initialize it with a README.
