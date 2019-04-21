@@ -15,7 +15,7 @@ VuePress site and publish it for free!
 VuePress converts Markdown files into HTML pages with free
 built-in search (of headings levels 1-3), which means that
 in case you don't like VuePress you can use your same
-markdown articles in any other CMS that supports Markdown,
+markdown articles in any other CMS that supports Mardkdown,
 from Ghost to Jekyll to Hugo to WordPress. Restricting
 the input to text that conforms to Markdown standards has
 a powerful side effect: it forces you to concentrate on writing
@@ -41,7 +41,16 @@ Git expert. If you're used to adding a README.md
 right away when you create your repo at GitHub, for
 example, resist the temptation.
 
-### Assumptions
+## Create a repository on GitHub
+
+* Create a [New repository](https://github.com/new) on 
+GitHub and **do not** initialize it with a README.
+The only thing you need to enter is the repo name
+(the description is optional).
+
+## Setting up your work directories
+
+**Assumptions**
 
 * This sample code lives in a directory 
 located at `~/html`, but obviously 
@@ -57,12 +66,10 @@ replace this with your own username.
 I use to create text files. Replace this with the name
 of your own editor.
 
-## Setting up your work directories
-
 VuePress requires a fairly deep directory structure.
 
 * Create a directory
-```sh
+```bash
 mkdir -p ~/html/vuepress-netlify-github/docs/.vuepress
 ```
 
@@ -70,13 +77,13 @@ mkdir -p ~/html/vuepress-netlify-github/docs/.vuepress
 
 * Change to the root directory.
 
-```sh
+```bash
 cd ~/html/vuepress-netlify-github
 ```
 
 * Create a file called README.md in the `/docs/` directory.
 
-```sh
+```bash
 nvim ~/html/vuepress-netlify-github/docs/README.md
 ```
 
@@ -88,13 +95,21 @@ nvim ~/html/vuepress-netlify-github/docs/README.md
 Thank you for visiting.
 ```
 
+## Once: Run git init
+
+Create the Git repository. You only  need to do this once.
+
+```bash
+git init
+```
+
 ## Adding README.md to source code control
 
 Now it's time to put README.md under source code
 control and push it up to GitHub, where Netlify
 can find it.
 
-```sh
+```bash
 git add docs/README.md
 git commit -m "Create home page"
 ```
@@ -106,15 +121,20 @@ Again:
 * Replace `tomcam` with your username
 * Replace `vuepress-netlify-github` with the name of your project.
 
-```sh
+## Once: Establish the repository's location
+
+This step only needs to be done once. It tells Git
+where you send your code after you've committed it.
+
+```bash
 git remote add origin https://github.com/tomcam/vuepress-netlify-github.git
 ```
+##  Upload your changes to the remote repository
 
-You won't have to repeat the previous step.
-It only needed to be done once. Now send this code
-to GitHub.
+Now send this code to GitHub.
 
-```sh
+
+```bash
 git push -u origin master
 ```
 
@@ -159,7 +179,7 @@ username and repo name, respectively: `https://github.com/tomcam/vuepress-netlif
 
 Now commit it to source code:
 
-```sh
+```bash
 git add package.json
 git commit -m "Add deployment to docs directory"
 git push -u origin master
@@ -169,7 +189,7 @@ git push -u origin master
 
 Time to run VuePress:
 
-```sh
+```bash
 yarn docs:dev
 ```
 
@@ -183,7 +203,7 @@ works in a concrete way.
 
 * Create a new directory called `public` in the `.vuepress` directory:
 
-```sh
+```bash
 mkdir -p ~/html/vuepress-netlify-github/docs/.vuepress/public
 ```
 
