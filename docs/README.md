@@ -1,7 +1,7 @@
 ![Generic biz pic](/wordpress-site-1280.jpg)
 # Configuring VuePress to work with Netlify and GitHub
 
-This published on Netlify at https://vuepress-netlify-github.netlify.com.
+This is published on Netlify at https://vuepress-netlify-github.netlify.com.
 
 By Tom Campbell, creator of [VuePress Book](http://vuepressbook.com).
 Find this code on [GitHub](http://github.com/tomcam/vuepress-netlify-github).
