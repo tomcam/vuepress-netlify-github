@@ -160,6 +160,9 @@ own use (directions follow):
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
+ "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
   "homepage": "https://github.com/tomcam/vuepress-netlify-github#readme",
   "dependencies": {
     "vuepress": "^0.14.0"
