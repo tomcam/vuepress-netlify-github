@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/tomcam/presshosting#readme",
   "dependencies": {
-    "vuepress": "^0.14.0"
+    "vuepress": "^1.1.0"
   }
 }
