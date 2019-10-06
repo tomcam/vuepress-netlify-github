@@ -24,11 +24,11 @@ a powerful side effect: it forces you to concentrate on writing
 and the structure of your articles instead of constantly reworking
 site parameters or format options.
 
-## VuePress prefers a /doc directory
+## VuePress prefers a /docs directory
 
 [VuePress](https://v1.vuepress.vuejs.org/) likes its
-text to be in a `/doc/` directory off root. If you 
-play your cards right it will rewrite the `/doc/` part
+text to be in a `/docs/` directory off root. If you 
+play your cards right it will rewrite the `/docs/` part
 out of URL. This article shows you how to set up
 your workflow so VuePress, Netlify, and local preview all
 know what to do in terms of transforming your 
@@ -45,6 +45,18 @@ Git expert.
 GitHub and **do not** initialize it with a README.
 The only thing you need to enter is the repo name
 (the description is optional).
+
+## Set the 
+
+GitHub lets you publish your repository as a website, automatically converting your
+Markdown pages to HTML. It works better if you set its master branch to the `/docs`
+folder. You can use Jekyll, GitHub's built-in static site generator, to theme the pages.
+
+* From your repository's main page, choose the **Settings** tab.
+
+* Scroll down to the **GitHub Pages** section.
+
+* Choose **Source**, then make sure to check **master branch /docs folder**.
 
 ## Setting up your work directories
 
@@ -160,12 +172,9 @@ own use (directions follow):
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
- "resolutions": {
-    "webpack-dev-middleware": "3.6.0"
-  },
   "homepage": "https://github.com/tomcam/vuepress-netlify-github#readme",
   "dependencies": {
-    "vuepress": "^0.14.0"
+    "vuepress": "^1.1.0"
   }
 }
 ```
@@ -178,7 +187,9 @@ a description that matches what your repo does
 * Replace the `tomcam` and `vuepress-netlify-github` with your
 username and repo name, respectively: `https://github.com/tomcam/vuepress-netlify-github#readme `
 
-Now commit it to source code:
+* Save `package.json` to the root directory of your repo, not the `/docs` directory.
+
+* Now commit it to source code:
 
 ```bash
 git add package.json
