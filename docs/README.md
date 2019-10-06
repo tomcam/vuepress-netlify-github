@@ -46,7 +46,7 @@ GitHub and **do not** initialize it with a README.
 The only thing you need to enter is the repo name
 (the description is optional).
 
-## Set the 
+## Set the base directory to /docs
 
 GitHub lets you publish your repository as a website, automatically converting your
 Markdown pages to HTML. It works better if you set its master branch to the `/docs`
@@ -80,7 +80,7 @@ VuePress requires a fairly deep directory structure.
 
 * Create a directory
 ```bash
-mkdir -p ~/html/vuepress-netlify-github/docs/.vuepress
+mkdir -p ~/html/vuepress-netlify-github/docs/.vuepress/public
 ```
 
 ## Creating your root README.md file
